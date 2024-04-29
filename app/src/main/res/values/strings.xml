@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Aruka Application</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Kazakh Culture</string>
+    <string name="second_fragment_label">Aesthetic</string>
+    <string name="activity_kazakh_culture">Jewelry Page</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Welcome to Aruka, where we celebrate the rich tapestry of Kazakh culture through artisanal craftsmanship. Immerse yourself in the beauty and elegance of handcrafted accessories, garments, and jewelry, each piece meticulously crafted to reflect the heritage and traditions of Kazakhstan.
+
+At Aruka, we believe in the power of storytelling through artistry. Each creation is a testament to the skill and dedication of our artisans, preserving and promoting the legacy of Kazakh craftsmanship for generations to come.
+
+Join us in celebrating the timeless beauty of Kazakh culture, one masterpiece at a time.
+
+Feel free to tweak any part to better fit your vision!
+    </string>
+    <string name="page2">
+Казахстан - это удивительная страна, богатая культурным наследием и традициями. Казахская культура пронизана гостеприимством, духовностью и уважением к природе. Она олицетворяет богатство многовековой истории и многоликость этнических групп, которые живут на этой территории.
+
+Традиционная казахская культура включает в себя разнообразные элементы, такие как национальная музыка, танцы, кухня, ремесла, одежда и обычаи. К примеру, домбра - это национальный музыкальный инструмент, который часто сопровождает исполнение казахских народных песен. Казахские танцы, такие как "Кара Жорга" и "Ак Куйрык", передают дух и красоту культуры этого народа.
+
+Казахская кухня богата разнообразием блюд, включая мясные и молочные продукты. Шашлык, бешбармак, манты и кумыс - это всего лишь несколько примеров того, что можно попробовать, погрузившись в казахскую культуру.
+
+Традиционная одежда казахов, такая как шапан, тобылган, таразан и кайнекей, также отражает богатство и красоту культуры этого народа.
+
+В общем, казахская культура является важным аспектом истории и идентичности народа Казахстана, которая продолжает эволюционировать и привлекать внимание многих людей со всего мира.
+</string>
+        <string name="ALMATY">ALMATY</string>
+        <string name="almaty_info">Almaty is the largest city in Kazakhstan, located in the south of the country. It is known for its vibrant cultural scene and stunning mountain views.</string>
+        <string name="more_about_almaty">More about Almaty</string>
+        <string name="out_of_stock">Out of Stock</string>
+
+        <!-- Description of Kazakh jewellery -->
+        <string name="kazakh_jewellery_info">
+"Unlock the allure of Shashbaw for your customers! Elevate your app offerings with the timeless appeal of this ancient game, reimagined for the modern age. With its captivating gameplay and stunning visuals, Shashbaw promises to captivate users of all ages. Enhance your app's portfolio and offer your users an experience they won't forget.
+            Contact us now to discuss licensing opportunities and bring the magic of Shashbaw to your platform!"        </string>
+
+    <string name="kazakh_jewellery_image_description">Description of the second image</string>
+    <string name="second_image_description">Description of the second image</string>
+
+
+
+ "welcomeTextView"
+</resources>

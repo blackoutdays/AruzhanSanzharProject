@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <!-- Define transitions and constraints here -->
+
+    <Transition
+        motion:constraintSetStart="@id/start"
+        motion:constraintSetEnd="@id/end"
+        motion:duration="1000">
+        <!-- Define motion attributes for the transition -->
+        <OnSwipe />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <!-- Define initial positions and attributes of views -->
+        <Constraint
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/textview_first"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginBottom="20dp" />
+        <Constraint
+            motion:layout_constraintStart_toEndOf="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/imageView2"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            motion:layout_constraintStart_toEndOf="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/imageView3"
+            motion:layout_constraintBottom_toBottomOf="parent" />
+        <!-- Define constraints for other views -->
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <!-- Define final positions and attributes of views -->
+        <Constraint
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="32dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="parent" />
+        <!-- Define constraints for other views -->
+    </ConstraintSet>
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:autoTransition="jumpToStart" />
+
+</MotionScene>

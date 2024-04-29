@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- navigation_main.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.myapplication.WelcomeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_firstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.myapplication.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+
+
+    <!-- Define KazakhCultureActivity as a destination -->
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.myapplication.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+        <action
+            android:id="@+id/action_SecondFragment_to_KazakhCultureActivity"
+            app:destination="@id/kazakhCultureActivity" />
+    </fragment>
+
+    <activity
+        android:id="@+id/kazakhCultureActivity"
+        android:name="com.example.myapplication.KazakhCultureActivity"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/activity_kazakh_culture"/>
+
+    <fragment
+        android:id="@+id/dynamicFragment"
+        android:name="com.example.myapplication.DynamicFragment"
+        android:label="Dynamic Fragment"
+        tools:layout="@layout/fragment_dynamic">
+        <action
+            android:id="@+id/action_dynamicFragment_to_embeddedFragment"
+            app:destination="@id/embeddedFragment" />
+    </fragment>
+    <action
+        android:id="@+id/action_embeddedFragment_to_welcomeFragment"
+        app:destination="@id/welcomeFragment" />
+
+    <fragment
+        android:id="@+id/embeddedFragment"
+        android:name="com.example.myapplication.EmbeddedFragment"
+        android:label="Embedded Fragment"
+        tools:layout="@layout/fragment_embedded"
+        />
+
+</navigation>
